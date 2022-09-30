@@ -32,7 +32,7 @@
         var x_dir = [-1, 0, 1, 0]; // position adjusments
         var y_dir = [0, -1, 0, 1]; // position adjusments
         var queue = [];
-        var frog = 1; // defalut food
+        var frog = 1; // default food
         var map = [];
         var MR = Math.random;
         var X = (5 + MR() * (rect_w - 10)) | 0; // Calculate positions
@@ -85,7 +85,7 @@
               random_snake();
               frog++;
             }
-            //ctx.fillStyle("#ffffff");
+            //ctx.fillStyle("#ba6906");
             ctx.fillRect(X * 10, Y * 10, 9, 9);
             map[X][Y] = 2;
             queue.unshift([X, Y]);
